@@ -28,11 +28,11 @@ function MoistureValue() {
         style={{
           width: "80px",
           position: "absolute",
-          backgroundColor: soilMoisture > 500 ? "red" : "green",
+          backgroundColor: soilMoisture > 2047 ? "red" : "green",
           left: "0",
           bottom: "0",
           zIndex: 1,
-          height: (soilMoisture / 1000) * 100 + "%",
+          height: (soilMoisture / 4095) * 100 + "%",
         }}
       ></div>
     </div>
